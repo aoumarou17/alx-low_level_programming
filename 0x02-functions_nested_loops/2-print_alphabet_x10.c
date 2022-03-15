@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 			++alpha;
 		}
 		--n;
-		_putcha(10);
+		_putchar(10);
 		alpha = 'a';
 	}
 }
