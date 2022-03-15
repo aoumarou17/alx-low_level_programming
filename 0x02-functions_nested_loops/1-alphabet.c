@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_alphaber - function for printing lowercase alphabets
+ * print_alphabet - function for printing lowercase alphabets
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char alpha = 'a';
 
