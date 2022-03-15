@@ -15,7 +15,7 @@ int main(void)
 			s = s + n;
 		}
 		else
-		{		
+		{
 		}
 	}
 	printf("%d\n", s);
