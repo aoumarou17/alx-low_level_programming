@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int a;
+	int x;
 
-	a = 0;
+	x = 0;
 
-	positive_or_negative(a);
+	positive_or_negative(x);
 	return (0);
 }
