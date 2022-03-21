@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - function
@@ -13,7 +14,7 @@ void print_array(int *a, int n)
 	if (n > 0)
 	{
 		while (k < n - 1)
-			printf("%d, ", a[i++]);
+			printf("%d, ", a[k++]);
 		printf("%d\n", a[k]);
 	}
 	else
