@@ -22,10 +22,14 @@ int main(int argc, char *argv[])
 			for (j = 0; argv[i][j] != '\0'; j++)
 			{
 				if (argv[i][j] >= '0' && argv[i][j] <= '9')
+				{
 					continue;
+				}
 				else
+				{
 					printf("Error\n");
 					return (0);
+				}
 			}
 			result += atoi(argv[i]);
 		}
