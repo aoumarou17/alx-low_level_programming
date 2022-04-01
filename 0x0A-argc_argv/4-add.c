@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /**
  * main - prints the addition of two positive numbers
  *
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 		}
 		result += atoi(argv[i]);
 	}
-	printf("%d\n", reslt);
+	printf("%d\n", result);
 	return (0);
 }
