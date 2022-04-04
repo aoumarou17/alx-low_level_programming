@@ -47,7 +47,7 @@ char **strtow(char *str)
 	}
 	for (i = a1 = 0; i < height; i++)
 	{
-		for (c = a1; str[c] != '\0')
+		for (c = a1; str[c] != '\0';)
 		{
 			if (str[c] == ' ')
 				a1++;
