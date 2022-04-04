@@ -21,26 +21,33 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (x = 0; s1[x] != '\0'; x++)
-		;
+	x = 0;
+	while (s1[x] != '\0')
+		x++;
 
-	for (y = 0; s2[y] != '\0'; y++)
-		;
+	y = 0;
+	while (s2[y] != '\0')
+		y++;
 
-	str1 = malloc(sizeof(char) * (x + y + 1));
-
+	str1 = malloc(sizeof(char) * x + y + 1);
 	if (str1 == NULL)
-	{
-		free(str1);
 		return (NULL);
+
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		str1[i] = s1[i];
+		i++;
 	}
 
-	for (i = 0; i < i; i++)
-		str1[i] = s1[i];
-
-	limit = y;
-	for (y = 0; y <= limit; i++, y++)
-		str1[i] = s2[y];
-
+	limit = 0;
+	while (s2[limit] != '\0')
+	{
+		str1[i] = s2[limit];
+		i++;
+		limit++;
+	}
+	str1[i] = '\0';
 	return (str1);
+
 }
