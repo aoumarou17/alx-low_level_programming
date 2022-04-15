@@ -2,20 +2,20 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+
 /**
  * print_all - function with 2 parameter
  * @format: char type pointer to string
  * Description: prints anything followed by a new line
  * Return: na
  */
-
 void print_all(const char * const format, ...)
 {
 	int j;
 	char *str;
 	char *space;
 	va_list ap;
-	
+
 	printf("\n");
 	va_start(ap, format);
 	j = 0;
